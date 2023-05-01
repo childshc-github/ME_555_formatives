@@ -1,0 +1,37 @@
+Grading at 04/30/2023:17:50:42.810451
+For commit ID e6808990bbff8fac8cbbf7107bcb21cb3ec0c0f4
+Grading at Sun Apr 30 01:50:39 PM EDT 2023
+Doing some basic checking for your submission.
+
+Attempting to compile
+make clean
+rm -f *~ *.o path-step1 path-step2 path-step3 path-step4
+make
+g++ -Werror -Wall -pedantic -std=gnu++98 -ggdb3 -c path-step1.cpp
+g++ -Werror -Wall -pedantic -std=gnu++98 -ggdb3 -c path_planning.cpp
+g++ -o path-step1 path-step1.o path_planning.o
+g++ -Werror -Wall -pedantic -std=gnu++98 -ggdb3 -c path-step2.cpp
+g++ -o path-step2 path-step2.o path_planning.o
+g++ -Werror -Wall -pedantic -std=gnu++98 -ggdb3 -c path-step3.cpp
+g++ -o path-step3 path-step3.o path_planning.o
+g++ -Werror -Wall -pedantic -std=gnu++98 -ggdb3 -c path-step4.cpp
+g++ -o path-step4 path-step4.o path_planning.o
+
+You have chosen the Path Planning miniproject!
+Checking make clean and make by removing all executables
+Running make again
+g++ -o path-step1 path-step1.o path_planning.o
+g++ -o path-step2 path-step2.o path_planning.o
+g++ -o path-step3 path-step3.o path_planning.o
+g++ -o path-step4 path-step4.o path_planning.o
+Step 1: found
+Step 2: found
+Step 3: found
+Step 4: found
+
+Found TESTING.txt (good)
+
+You have the passed the pregrader tests
+You should still run comprehensive tests of your own
+
+Overall Grade: NO GRADE YET
