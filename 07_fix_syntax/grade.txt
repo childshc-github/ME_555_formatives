@@ -1,0 +1,11 @@
+Grading at 01/17/2023:16:47:31.274220
+For commit ID 6255aa5e600aecc53d5995d60ab38f37d112ef92
+Grading at Tue Jan 17 11:47:31 AM EST 2023
+Checking errors.txt
+Your file matched the expected output
+errors.txt is correct.
+Checking the syntax is code.c
+code.c has legal syntax
+Your file matched the expected output
+
+Overall Grade: PASSED
