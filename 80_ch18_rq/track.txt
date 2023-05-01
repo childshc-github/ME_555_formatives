@@ -1,0 +1,4 @@
+Not: 4
+9. B, A to C
+10. D to B
+2. B, H, I, E to A
