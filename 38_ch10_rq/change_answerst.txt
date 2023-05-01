@@ -1,0 +1,11 @@
+1: D
+2: C
+3: not A, B, C
+4: not E, A, C
+7: C
+8: D
+9: B
+10: E to A
+11: E to D
+12: B
+15: B
