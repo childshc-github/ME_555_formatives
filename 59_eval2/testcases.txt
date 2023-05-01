@@ -1,0 +1,19 @@
+#error
+story-step1 errors_step1/three_underscores.txt
+story-step1 errors_step1/error_second_line.txt
+story-step2 errors_step2/wrong_format.txt
+story-step3 words.txt
+story-step3 story.txt words.txt
+story-step3 errors_step3/no_match_words.txt story.txt
+story-step4 errors_step4/out_array.txt
+
+#success
+story-step1 story.txt
+story-step1 errors_step1/correct_story.txt
+story-step2 words.txt
+story-step3 words.txt story.txt
+story-step4 words.txt story2.txt
+story-step4 words.txt errors_step4/correct_long.txt
+story-step4 words.txt errors_step4/correct_ref_to_ref.txt
+story-step4 nums.txt errors_step4/correct_0.txt
+story-step4 nums.txt errors_step4/correct_mixed.txt

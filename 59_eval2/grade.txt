@@ -1,0 +1,243 @@
+Grading at 03/24/2023:00:49:15.509177
+For commit ID 3ae82ccf648546291b9851606f1eea22cfe9e8a7
+Grading at Thu Mar 23 08:48:50 PM EDT 2023
+
+=========================================================================
+Step 1
+
+Checking that story-step1 compiles
+rm -f story-step*.o rand_story.o *~ story-step1 story-step2 story-step3 story-step4
+gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c rand_story.c
+gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c story-step1.c
+gcc -o story-step1 story-step1.o rand_story.o provided.o
+rm story-step1.o
++-----------------------------------------------------------------------+
+Test case 1
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 2
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 3
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+Test case 4
+Your program successfully indicated a failure case
+                                                         [4/4]
++-----------------------------------------------------------------------+
+Test case 5
+Your file matched the expected output
+                                                         [4/4]
++-----------------------------------------------------------------------+
+Test case 6
+Your file matched the expected output
+                                                         [4/4]
++-----------------------------------------------------------------------+
+Test case 7
+Your file matched the expected output
+                                                         [4/4]
++-----------------------------------------------------------------------+
+Test case 8
+Your file matched the expected output
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 9
+Valgrind reported memory errors
+Line_1_did_not_match
+Your file did not match the expected output
+                                                         [0/3]
++-----------------------------------------------------------------------+
+Test case 10
+Your file matched the expected output
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 11
+Your file matched the expected output
+                                                         [3/3]
+
+Step 1 total                                             [27.0/30]
+
+=========================================================================
+Step 2
+
+Checking that story-step2 compiles
+rm -f story-step*.o rand_story.o *~ story-step1 story-step2 story-step3 story-step4
+gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c rand_story.c
+gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c story-step2.c
+gcc -o story-step2 story-step2.o rand_story.o provided.o
+rm story-step2.o
++-----------------------------------------------------------------------+
+Test case 12
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 13
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 14
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+Test case 15
+Your program successfully indicated a failure case
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 16
+Your file matched the expected output
+                                                         [4/4]
++-----------------------------------------------------------------------+
+Test case 17
+Valgrind reported memory errors
+Your file matched the expected output
+                                                         [1.4/2]
++-----------------------------------------------------------------------+
+Test case 18
+Line_1_did_not_match
+Your file did not match the expected output
+                                                         [0/2]
++-----------------------------------------------------------------------+
+Test case 19
+Valgrind reported memory errors
+Your file matched the expected output
+                                                         [1.4/2]
++-----------------------------------------------------------------------+
+Test case 20
+Line_1_did_not_match
+Your file did not match the expected output
+                                                         [0/2]
++-----------------------------------------------------------------------+
+Test case 21
+Line_1_did_not_match
+Your file did not match the expected output
+                                                         [0/2]
++-----------------------------------------------------------------------+
+Test case 22
+Your file matched the expected output
+                                                         [1/1]
+
+Step 2 total                                             [12.8/20]
+
+=========================================================================
+Step 3
+
+Checking that story-step3 compiles
+rm -f story-step*.o rand_story.o *~ story-step1 story-step2 story-step3 story-step4
+gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c rand_story.c
+gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c story-step3.c
+gcc -o story-step3 story-step3.o rand_story.o provided.o
+rm story-step3.o
++-----------------------------------------------------------------------+
+Test case 23
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 24
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 25
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+Test case 26
+Your program successfully indicated a failure case
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 27
+Your program successfully indicated a failure case
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 28
+Your file matched the expected output
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 29
+Valgrind reported memory errors
+Your file matched the expected output
+                                                         [2.1/3]
++-----------------------------------------------------------------------+
+Test case 30
+Valgrind reported memory errors
+Your file matched the expected output
+                                                         [2.1/3]
++-----------------------------------------------------------------------+
+Test case 31
+Your file matched the expected output
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 32
+Your file matched the expected output
+                                                         [2/2]
+
+Step 3 total                                             [18.2/20]
+
+=========================================================================
+Step 4
+
+Checking that story-step4 compiles
+rm -f story-step*.o rand_story.o *~ story-step1 story-step2 story-step3 story-step4
+gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c rand_story.c
+gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c story-step4.c
+gcc -o story-step4 story-step4.o rand_story.o provided.o
+rm story-step4.o
++-----------------------------------------------------------------------+
+Test case 33
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 34
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 35
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+Test case 36
+Your program successfully indicated a failure case
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 37
+Your program successfully indicated a failure case
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 38
+Your file matched the expected output
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 39
+Your file matched the expected output
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 40
+Valgrind reported memory errors
+Your file matched the expected output
+                                                         [2.1/3]
++-----------------------------------------------------------------------+
+Test case 41
+Valgrind reported memory errors
+Your file matched the expected output
+                                                         [2.1/3]
+
+Step 4 total                                             [18.2/20]
+
+=========================================================================
+Code quality
+
+Abstration:    Excellent
+Naming:        Excellent
+Formatting:    Excellent
+Documentation: Excellent
+Comments from your grader:
+Good function names and they are split up nicely. The code is well documented 
+and easy to follow. Good job! Prefer not to add executables to Git, since these 
+can be made from the source code.
+Quality total                                            [10/10]
+
+=========================================================================
+
+Overall Grade: 86

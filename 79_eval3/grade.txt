@@ -1,0 +1,107 @@
+Grading at 04/24/2023:18:58:30.403286
+For commit ID bdad5d4054fc3e71689d3df044d1360b6d77a2f7
+Grading at Mon Apr 24 02:58:09 PM EDT 2023
+
+Step 1
+Checking that test-step1 compiles
+rm -f *~ *.o test-step1 test-step2 num_sim
+g++ -Werror -Wall -pedantic -std=gnu++98 -ggdb3 -c test-step1.cpp
+g++ -Werror -Wall -pedantic -std=gnu++98 -ggdb3 -c myode.cpp
+g++ -o test-step1 test-step1.o myode.o
+The code compiled (good)
+Executable test-step1 exists (good)
+----------------------------------------------------------------------
+1.1: Comparing your test-step1 output with ours (test-step1.cpp with our MyOde)
+Your output looks good. Lets check valgrind:
+  - Valgrind was clean (no errors, no memory leaks)
+----------------------------------------------------------------------
+1.2: Using our test main and test case p={1,0.1,5,2,6} t=0 y={0.5,0}
+Your output looks good. Lets check valgrind:
+  - Valgrind was clean (no errors, no memory leaks)
+
+Step 2
+Checking that test-step2 compiles
+rm -f *~ *.o test-step1 test-step2 num_sim
+g++ -Werror -Wall -pedantic -std=gnu++98 -ggdb3 -c test-step2.cpp
+g++ -Werror -Wall -pedantic -std=gnu++98 -ggdb3 -c myode.cpp
+g++ -Werror -Wall -pedantic -std=gnu++98 -ggdb3 -c euler.cpp
+g++ -o test-step2 test-step2.o myode.o euler.o
+The code compiled (good)
+Executable test-step2 exists (good)
+----------------------------------------------------------------------
+2.1: Comparing your test-step2 output with ours (test-step2.cpp with our MyOde and EulerSimulation)
+Your output looks good. Lets check valgrind:
+  - Valgrind was clean (no errors, no memory leaks)
+----------------------------------------------------------------------
+2.2: Using our test main and test case p={1,0.1,5,2,6} tspan={0,1} y={0,0.1} n=3
+Your output looks good. Lets check valgrind:
+  - Valgrind was clean (no errors, no memory leaks)
+
+Step 3
+Checking that num_sim compiles
+rm -f *~ *.o test-step1 test-step2 num_sim
+g++ -Werror -Wall -pedantic -std=gnu++98 -ggdb3 -c num_sim.cpp
+g++ -Werror -Wall -pedantic -std=gnu++98 -ggdb3 -c myode.cpp
+g++ -Werror -Wall -pedantic -std=gnu++98 -ggdb3 -c euler.cpp
+g++ -o num_sim num_sim.o myode.o euler.o
+The code compiled (good)
+Executable num_sim exists (good)
+Now running YOUR tests for step 3
+----------------------------------------------------------------------
+3.1: Current test is num_sim 1,.1,5,2,6 0,1 .5,0
+Great: we both considered this an error. Lets check if it valgrinds:
+  - Valgrind was clean
+----------------------------------------------------------------------
+3.2: Current test is num_sim 1,.1,5,2,6,1 .5,0
+Great: we both considered this an error. Lets check if it valgrinds:
+  - Valgrind was clean
+----------------------------------------------------------------------
+3.3: Current test is num_sim 1,.1,5,2,6,1 .5,0 0,1
+Great: we both considered this an error. Lets check if it valgrinds:
+  - Valgrind was clean
+----------------------------------------------------------------------
+3.4: Current test is num_sim 1,.1,hello,2,6 0,1 .5,0 3
+Great: we both considered this an error. Lets check if it valgrinds:
+  - Valgrind was clean
+----------------------------------------------------------------------
+3.5: Current test is num_sim 1,.1,5,2,6 0,1 .5,0 3,3
+Great: we both considered this an error. Lets check if it valgrinds:
+  - Valgrind was clean
+----------------------------------------------------------------------
+3.6: Current test is num_sim 1,.1,5,.,6 0,1 .5,0 3
+Great: we both considered this an error. Lets check if it valgrinds:
+  - Valgrind was clean
+----------------------------------------------------------------------
+3.7: Current test is num_sim 1,.1,5,2 ,6 0,1 .5,0 3
+Great: we both considered this an error. Lets check if it valgrinds:
+  - Valgrind was clean
+----------------------------------------------------------------------
+3.8: Current test is num_sim 1,.1,5,2,6 0,1 .5, 3
+Your output looks good. Lets check valgrind:
+  - Valgrind was clean (no errors, no memory leaks)
+----------------------------------------------------------------------
+3.9: Current test is num_sim 1,.1,5,2,6 0,1 .5,0 .5,0
+Great: we both considered this an error. Lets check if it valgrinds:
+  - Valgrind was clean
+----------------------------------------------------------------------
+3.10: Current test is num_sim 1,.1,5,2,6 0,1 .5,0 3
+Your output looks good. Lets check valgrind:
+  - Valgrind was clean (no errors, no memory leaks)
+----------------------------------------------------------------------
+3.11: Current test is num_sim 10,.1,.5,2,6 0,1 .5,0 3
+Your output looks good. Lets check valgrind:
+  - Valgrind was clean (no errors, no memory leaks)
+----------------------------------------------------------------------
+3.12: Current test is num_sim 10,.1,.5,2,6 0,5 .5,0 3
+Your output looks good. Lets check valgrind:
+  - Valgrind was clean (no errors, no memory leaks)
+----------------------------------------------------------------------
+3.13: Current test is num_sim 10,.1,.5,2,6 5,0 .5,0 3
+Your output looks good. Lets check valgrind:
+  - Valgrind was clean (no errors, no memory leaks)
+
+You have passed the test cases YOU provided
+If your tests are good, this is great.
+If your tests are insufficient, you should do much more testing.
+
+Overall Grade: NO GRADE YET
