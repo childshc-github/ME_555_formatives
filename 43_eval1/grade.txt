@@ -1,0 +1,234 @@
+Grading at 03/27/2023:19:15:42.386573
+For commit ID ef40965ca67ae31b6fa632ad69a66c08ec5d582a
+Grading at Mon Mar 27 03:15:14 PM EDT 2023
+stats.c and stats.h exist (good)
+
+Compiling
+rm -f *~ printRoster printStats printDoubleDouble printPosPoints stats.o
+gcc -c -std=gnu99 -ggdb3 -pedantic -Wall -Werror stats.c
+gcc -o printRoster printRoster.o stats.o
+gcc -o printStats printStats.o stats.o
+gcc -o printDoubleDouble printDoubleDouble.o stats.o
+gcc -o printPosPoints printPosPoints.o stats.o
+
+=========================================================================
+Step 1
+
++-----------------------------------------------------------------------+
+Test case 1
+Your program successfully indicated a failure case
+                                                         [1.36/1.36]
++-----------------------------------------------------------------------+
+Test case 2
+Your program successfully indicated a failure case
+                                                         [1.36/1.36]
++-----------------------------------------------------------------------+
+Test case 3
+Your program successfully indicated a failure case
+                                                         [1.36/1.36]
++-----------------------------------------------------------------------+
+Test case 4
+Your program successfully indicated a failure case
+                                                         [1.36/1.36]
++-----------------------------------------------------------------------+
+Test case 5
+Your program did not indicate a failure case
+                                                         [0/1.36]
++-----------------------------------------------------------------------+
+Test case 6
+Your program successfully indicated a failure case
+                                                         [1.36/1.36]
++-----------------------------------------------------------------------+
+Test case 7
+Your program successfully indicated a failure case
+                                                         [1.36/1.36]
++-----------------------------------------------------------------------+
+Test case 8
+Your program successfully indicated a failure case
+                                                         [1.36/1.36]
++-----------------------------------------------------------------------+
+Test case 9
+Your program successfully indicated a failure case
+                                                         [1.36/1.36]
++-----------------------------------------------------------------------+
+Test case 10
+Your program successfully indicated a failure case
+                                                         [1.36/1.36]
++-----------------------------------------------------------------------+
+Test case 11
+Your program successfully indicated a failure case
+                                                         [1.36/1.36]
++-----------------------------------------------------------------------+
+Test case 12
+Your file matched the expected output
+                                                         [5/5]
++-----------------------------------------------------------------------+
+Test case 13
+Your file matched the expected output
+                                                         [5/5]
++-----------------------------------------------------------------------+
+Test case 14
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+Test case 15
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+Test case 16
+Line_1_did_not_match
+Your file did not match the expected output
+                                                         [0/1]
++-----------------------------------------------------------------------+
+Test case 17
+Your file matched the expected output
+                                                         [1/1]
++-----------------------------------------------------------------------+
+Test case 18
+Line_1_did_not_match
+Your file did not match the expected output
+                                                         [0/1]
+
+Step 1 total                                             [27/30]
+
+=========================================================================
+Step 2
+
++-----------------------------------------------------------------------+
+Test case 1
+Your program successfully indicated a failure case
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 2
+Your file matched the expected output
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 3
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 4
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 5
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 6
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 7
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 8
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 9
+Your file matched the expected output
+                                                         [2/2]
+
+Step 2 total                                             [20/20]
+
+=========================================================================
+Step 3
+
++-----------------------------------------------------------------------+
+Test case 1
+Your file matched the expected output
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 2
+Your file matched the expected output
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 3
+Your file matched the expected output
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 4
+Your file matched the expected output
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 5
+Your file matched the expected output
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 6
+Your file matched the expected output
+                                                         [2.5/2.5]
++-----------------------------------------------------------------------+
+Test case 7
+Your file matched the expected output
+                                                         [2.5/2.5]
+
+Step 3 total                                             [20/20]
+
+=========================================================================
+Step 4
+
++-----------------------------------------------------------------------+
+Test case 1
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 2
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 3
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 4
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 5
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 6
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 7
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 8
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 9
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 10
+Your file matched the expected output
+                                                         [2/2]
+
+Step 4 total                                             [20/20]
+
+=========================================================================
+Code quality
+
+Abstration:    Excellent
+Naming:        Excellent
+Formatting:    Excellent
+Documentation: Excellent
+Comments:
+Nice job splitting parseLine, and writing descriptive comments. Abstraction is 
+great. I am a big fan of the comments before the functions, while not needed 
+for this class you should look at doxygen. It's a documentation generator 
+that's useful if writing a large code base. Prefer not to add executables to 
+Git, since these can be made from the source code.
+
+Quality total                                            [10/10]
+
+=========================================================================
+
+Overall Grade: 97

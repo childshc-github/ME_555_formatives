@@ -1,0 +1,37 @@
+#error
+printRoster printRostererrors/invalid2.txt
+printRoster printRostererrors/invalid4.txt
+printRoster printRostererrors/invalid5.txt
+printRoster printRostererrors/invalid6.txt
+printRoster printRostererrors/invalid7.txt
+printRoster printRostererrors/invalid8.txt
+printRoster printRostererrors/invalid9.txt
+printStats simple_roster.txt printStatserrors/invalid1.txt
+printStats simple_roster.txt printStatserrors/invalid2.txt
+printStats simple_roster.txt printStatserrors/invalid3.txt
+printStats simple_roster.txt printStatserrors/invalid4.txt
+printStats simple_roster.txt printStatserrors/invalid5.txt
+
+#success
+printRoster simple_roster.txt
+printRoster roster.txt
+printStats simple_roster.txt simple_game1.txt
+printStats simple_roster.txt simple_game2.txt
+printStats simple_roster.txt simple_game1.txt simple_game2.txt
+printStats roster.txt simple_game1.txt
+printStats roster.txt simple_game2.txt
+printStats roster.txt simple_game1.txt simple_game2.txt
+printDoubleDouble simple_roster.txt simple_game2.txt
+printDoubleDouble roster.txt simple_game1.txt
+printDoubleDouble roster.txt simple_game1.txt
+printDoubleDouble roster.txt printDoubleerrors/valid1.txt
+printDoubleDouble roster.txt printDoubleerrors/valid2.txt
+printDoubleDouble roster.txt printDoubleerrors/valid3.txt
+printPosPoints simple_roster.txt simple_game1.txt
+printPosPoints simple_roster.txt simple_game2.txt
+printPosPoints roster.txt simple_game1.txt
+printPosPoints roster.txt simple_game2.txt
+printPosPoints roster.txt printPosPointserrors/alltie.txt
+printPosPoints roster.txt printPosPointserrors/gctie.txt
+printPosPoints roster.txt printPosPointserrors/cftie.txt
+printPosPoints roster.txt printPosPointserrors/gftie.txt
