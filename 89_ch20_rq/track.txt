@@ -1,0 +1,3 @@
+Not 1, 2, 6, 7, 9, 13
+8. C, B, D, E, A, F to G
+3. A to B
