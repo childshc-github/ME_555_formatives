@@ -1,0 +1,11 @@
+Grading at 01/31/2023:22:06:29.366150
+For commit ID 5326c2f3021e53bf6ea0b9563796f92870462601
+Grading at Tue Jan 31 05:06:29 PM EST 2023
+Attempting to compile test.c
+gcc -Wall -Werror -pedantic -g -c test.c 
+gcc -o test test.o 
+compiled
+Your file matched the expected output
+Your output matched what we expected
+
+Overall Grade: PASSED
