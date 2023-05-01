@@ -1,0 +1,39 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "debug",
+            "type": "cppdbg",
+            "request": "launch",
+            // This is the path for the program you want to debug. Make sure
+            // "cwd" points to the folder you want the program to be run in.
+            "program": "${workspaceFolder}/mp_miniproject/path-step4",
+            "cwd": "${workspaceFolder}/mp_miniproject",
+            // If you need give arguments when starting the programming put them
+            // below. Example is given.
+            "args": [
+                "inputs4/ftg.txt",
+                "inputs3/empty_obstacles.txt",
+                "0",
+                "5",
+                "-a",
+            ],
+            // "args": [],
+            "stopAtEntry": false,
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}
